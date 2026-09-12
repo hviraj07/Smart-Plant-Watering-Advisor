@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Plant Watering Advisor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌿 Smart Plant Watering Advisor</h1>
+
+    <p class="subtitle">
+        Check live weather and receive watering advice.
+    </p>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter city (Example: Berlin)"
+        >
+
+        <button onclick="checkWeather()">
+            Check Weather
+        </button>
+
+    </div>
+
+    <div id="result" class="card">
+
+        <h2>Weather Information</h2>
+
+        <p><strong>📍 City:</strong> <span id="cityName">-</span></p>
+
+        <p><strong>🌡 Temperature:</strong> <span id="temp">-</span></p>
+
+        <p><strong>💧 Humidity:</strong> <span id="humidity">-</span></p>
+
+        <p><strong>☁ Weather:</strong> <span id="weather">-</span></p>
+
+        <p><strong>🌱 Watering Advice:</strong> <span id="advice">-</span></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
